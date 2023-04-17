@@ -58,61 +58,49 @@ main {
   .col-lg-12 {width: 100%;}
 }
 
-nav{
-  background-color: blue;
+nav {
+    background-color: darkblue;
+}
+
+nav div.row {
+    display: flex;
+    justify-content: space-between;
+}
+nav div.row div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav h1 {
   color: white;
-  width: 100%;
-  
-}
-header h1{
-  text-align: left;
-  padding-left: 10px;
-
-}
-nav a{
-  background-color: white;
-
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 15px;
 }
 
-nav ul{
-  place-content: right;
-  margin-left: 65%;
-  display: block;
-  margin-right: 1vw;
-  padding-right: 0;
-  padding-left: 0;
-  
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
 }
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-nav li{
-  display: inline-block;
-  text-align: left;
-  background-color: white;
-  border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 10px; 
-  margin:5px;
 
-}
-nav a{
-  color: red;
-  border-radius: 5px;
-  
-
+nav ul li {
+    padding: 5px 20px;
+    background-color: white;
+    margin-right: 5px;
+    color: black;
+    border-radius: 5px;
 }
 #services{
-  background-color: blue;
-  padding: 15px;
-  color: black;
-  text-align: center;
-  font-size: 14px;
+  padding-top: 200px;
+  padding-left: 0;
+  padding-right: 40px;
+  background-color: #ccc;
+  min-height: 700px;
   width: 30%;
- 
 }
-
 #services ul{
   display: flex;
   flex-direction: column;
@@ -171,7 +159,7 @@ footer{
 }
 
 #blog{
-   border: 2px solid black; 
+   /* border: 2px solid black;  */
   margin-top: 10%;
   padding:0;
   width: 70%;
@@ -183,7 +171,7 @@ footer{
   padding-bottom: 3%;
 }
 #blog img{
-  width: 267px;
+  width: 250px;
   height: 140px;
   border-radius: 5px;
   /* border: 1px solid black; */
@@ -198,10 +186,11 @@ footer{
   -webkit-box-shadow: -3px -3px 10px -3px rgba(64,64,64,0.75);
   -moz-box-shadow: -3px -3px 10px -3px rgba(64,64,64,0.75);
   
-  width: 267px;
+  width: 250px;
   height: 305px;
+  justify-content: space-between;
 
-  margin-left:4px;
+  margin-left:0px;
   margin-right: 4px;
   text-align: left;
   text-align: justify;
